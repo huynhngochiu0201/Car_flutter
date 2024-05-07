@@ -4,6 +4,8 @@ import 'package:car_flutter/manage/user/pages/auth/login/login_page.dart';
 import 'package:car_flutter/manage/user/pages/welcom_page.dart';
 import 'package:flutter/material.dart';
 
+import '../widget/onboardnavbtn.dart';
+
 class OnBoardingPage extends StatefulWidget {
   const OnBoardingPage({super.key});
 
@@ -28,17 +30,6 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
       ),
     );
   }
-
-  // Future<void> setSeenonboard() async {
-  //   SharedPreferences prefs = await SharedPreferences.getInstance();
-  //   await prefs.setBool('seenOnboard', true);
-  // }
-
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   setSeenonboard();
-  // }
 
   @override
   Widget build(BuildContext context) {
@@ -155,32 +146,6 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
           ],
         ),
       )),
-    );
-  }
-}
-
-class OnBoardNavBtn extends StatelessWidget {
-  const OnBoardNavBtn({
-    super.key,
-    required this.onPressed,
-    required this.name,
-  });
-  final String name;
-  final VoidCallback onPressed;
-  @override
-  Widget build(BuildContext context) {
-    return InkWell(
-      borderRadius: BorderRadius.circular(10.0),
-      splashColor: Colors.black12,
-      onTap: onPressed,
-      child: Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Text(
-          name,
-          style: const TextStyle(
-              fontSize: 16.0, color: Colors.black, fontWeight: FontWeight.w500),
-        ),
-      ),
     );
   }
 }

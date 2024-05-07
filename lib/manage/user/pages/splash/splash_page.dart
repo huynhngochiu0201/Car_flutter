@@ -1,7 +1,10 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
+import '../../../../services/local/shared_prefs_onboarding.dart';
 import 'onboarding_page.dart';
 
 class SplashPage extends StatefulWidget {
@@ -12,6 +15,9 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
+  SharedPrefsOnboarding prefs = SharedPrefsOnboarding();
+  bool? onboarding;
+
   @override
   void initState() {
     super.initState();

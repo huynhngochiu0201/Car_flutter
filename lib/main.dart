@@ -2,11 +2,7 @@ import 'package:car_flutter/manage/user/pages/splash/splash_page.dart';
 
 import 'package:flutter/material.dart';
 
-bool? seenOnboard;
 void main() async {
-  // SharedPreferences pref = await SharedPreferences.getInstance();
-  // seenOnboard = pref.getBool('seenOnboard') ?? true;
-
   runApp(const MyApp());
 }
 

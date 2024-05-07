@@ -1,8 +1,6 @@
 import 'dart:async';
-import 'dart:io';
-
+import 'package:car_flutter/manage/user/pages/auth/login/login_page.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../services/local/shared_prefs_onboarding.dart';
 import 'onboarding_page.dart';
@@ -15,23 +13,43 @@ class SplashPage extends StatefulWidget {
 }
 
 class _SplashPageState extends State<SplashPage> {
-  SharedPrefsOnboarding prefs = SharedPrefsOnboarding();
-  bool? onboarding;
+  late SharedPrefsOnboarding prefs;
+  bool? seenOnboard;
 
   @override
   void initState() {
     super.initState();
+    // Khởi tạo SharedPreferences
+    prefs = SharedPrefsOnboarding();
+    // Kiểm tra xem đã xem onboarding hay chưa
+    checkOnboardingStatus();
+  }
 
-    Timer(const Duration(milliseconds: 2000), () {
-      Route route = MaterialPageRoute(
-        builder: (context) => const OnBoardingPage(),
-      );
-      Navigator.pushAndRemoveUntil(
-        context,
-        route,
-        (Route<dynamic> route) => false,
-      );
-    });
+  // Hàm kiểm tra trạng thái của onboarding
+  Future<void> checkOnboardingStatus() async {
+    seenOnboard = await prefs.getSeenOnboard();
+    // Nếu đã xem onboarding, chuyển đến màn hình tiếp theo
+    if (seenOnboard != null && seenOnboard!) {
+      navigateToNextScreen();
+    } else {
+      // Nếu chưa xem onboarding, hiển thị trang onboarding và lưu lại trạng thái đã xem
+      await prefs.saveSeenOnboard(true);
+      Timer(const Duration(milliseconds: 2000), () {
+        Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const OnBoardingPage(),
+          ),
+          (Route<dynamic> route) => false,
+        );
+      });
+    }
+  }
+
+  // Hàm chuyển đến màn hình tiếp theo
+  void navigateToNextScreen() {
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => const LoginPage()));
   }
 
   @override

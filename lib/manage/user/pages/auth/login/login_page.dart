@@ -1,9 +1,9 @@
-import 'package:car_flutter/manage/user/pages/welcom_page.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../common/components/button/app_elevated_buttom.dart';
 import '../../../../../common/components/text_field/app_text_field.dart';
 import '../../../../../common/components/text_field/app_text_field_password.dart';
+import '../../home/home_page.dart';
 import '../reset_password/reset_password.dart';
 import 'register_page.dart';
 
@@ -59,8 +59,7 @@ class _LoginPageState extends State<LoginPage> {
                   const SizedBox(height: 25.0),
                   AppElevatedButton(
                     onPressed: () => Navigator.of(context).pushAndRemoveUntil(
-                      MaterialPageRoute(
-                          builder: (context) => const WelcomPage()),
+                      MaterialPageRoute(builder: (context) => const HomePage()),
                       (Route<dynamic> route) => false,
                     ),
                     text: 'Login',

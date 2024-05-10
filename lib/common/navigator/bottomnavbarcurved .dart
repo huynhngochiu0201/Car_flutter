@@ -39,7 +39,7 @@ class _BottomNavBarCurvedFb1State extends State<BottomNavBarCurvedFb1> {
                 backgroundColor: primaryColor,
                 elevation: 0.1,
                 onPressed: () => widget.onPressed(2),
-                child: const Icon(Icons.shopping_basket)),
+                child: const Icon(Icons.map_outlined)),
           ),
           SizedBox(
             height: height,

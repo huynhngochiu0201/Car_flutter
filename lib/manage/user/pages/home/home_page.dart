@@ -1,5 +1,6 @@
 import 'package:car_flutter/manage/user/models/post_user_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -57,6 +58,7 @@ class _HomePageState extends State<HomePage>
               child: TabBarView(controller: tabController, children: [
                 ListView.separated(
                     itemBuilder: (context, index) {
+                      final post = posts[index];
                       return Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 20.0),
                         child: Column(
@@ -68,15 +70,47 @@ class _HomePageState extends State<HomePage>
                                   backgroundImage: AssetImage(
                                       posts[index].user?.avatar ?? ''),
                                 ),
-                                const SizedBox(width: 5.0),
+                                const SizedBox(width: 10.0),
                                 Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text(posts[index].user?.name ?? ''),
-                                    Text(posts[index].user?.name ?? ''),
+                                    Text(
+                                      post.user?.name ?? '',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(
+                                          fontSize: 16.0,
+                                          fontWeight: FontWeight.w700),
+                                    ),
+                                    const SizedBox(height: 2.0),
+                                    Text(
+                                      post.user?.slogan ?? '',
+                                      maxLines: 1,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: const TextStyle(
+                                          color: Color(0XFFF19B15),
+                                          fontSize: 14.0,
+                                          fontWeight: FontWeight.w400),
+                                    ),
                                   ],
                                 ),
-                                const Divider(
-                                    thickness: 1, color: Color(0xFFEBEDEF))
+                              ],
+                            ),
+                            const Divider(
+                                thickness: 1, color: Color(0xFFEBEDEF)),
+                            Row(
+                              children: [
+                                SvgPicture.asset('assets/icons/ic_star.svg'),
+                                const SizedBox(width: 4.0),
+                                Text(
+                                  '${post.user?.rating ?? 0.0}',
+                                ),
+                                const SizedBox(
+                                  width: 45.0,
+                                ),
+                                SvgPicture.asset('assets/icons/ic_map_pin.svg'),
+                                const SizedBox(width: 4.0),
+                                Text(post.locationModel?.city ?? ''),
                               ],
                             )
                           ],

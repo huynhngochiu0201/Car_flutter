@@ -1,9 +1,11 @@
+import 'package:car_flutter/manage/user/models/location_model.dart';
 import 'package:car_flutter/manage/user/models/user_model.dart';
 
 class PostUserModel {
   UserModel? user;
-  String? cuisineType;
+  String? title;
   String? description;
+  LocationModel? locationModel;
   List<String>? images;
 
   PostUserModel();
@@ -12,7 +14,7 @@ class PostUserModel {
 List<PostUserModel> posts = [
   PostUserModel()
     ..user = user1
-    ..cuisineType = 'sadas'
+    ..title = 'sadas'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',
@@ -20,7 +22,7 @@ List<PostUserModel> posts = [
     ],
   PostUserModel()
     ..user = user2
-    ..cuisineType = 'sadas'
+    ..title = 'sadas'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',
@@ -28,7 +30,7 @@ List<PostUserModel> posts = [
     ],
   PostUserModel()
     ..user = user3
-    ..cuisineType = 'sadas'
+    ..title = 'sadas'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',
@@ -36,7 +38,7 @@ List<PostUserModel> posts = [
     ],
   PostUserModel()
     ..user = user4
-    ..cuisineType = 'sadas'
+    ..title = 'sadas'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',
@@ -44,7 +46,15 @@ List<PostUserModel> posts = [
     ],
   PostUserModel()
     ..user = user5
-    ..cuisineType = 'sadas'
+    ..title = 'sadas'
+    ..images = [
+      'assets/images/carrescue1.png',
+      'assets/images/carrescue1.png',
+      'assets/images/carrescue1.png',
+    ],
+  PostUserModel()
+    ..user = user6
+    ..title = 'sadas'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',

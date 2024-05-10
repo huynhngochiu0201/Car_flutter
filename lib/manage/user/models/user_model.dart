@@ -15,7 +15,7 @@ class UserModel {
 
 UserModel user1 = UserModel()
   ..name = 'hello'
-  ..avatar = 'hi'
+  ..avatar = 'assets/images/carrescue1.png'
   ..couverture = 'dasd'
   ..liked = true
   ..rating = 5
@@ -28,7 +28,7 @@ UserModel user1 = UserModel()
 
 UserModel user2 = UserModel()
   ..name = 'hello'
-  ..avatar = 'hi'
+  ..avatar = 'assets/images/carrescue1.png'
   ..couverture = 'dasd'
   ..liked = true
   ..rating = 5
@@ -41,7 +41,7 @@ UserModel user2 = UserModel()
 
 UserModel user3 = UserModel()
   ..name = 'hello'
-  ..avatar = 'hi'
+  ..avatar = 'assets/images/carrescue1.png'
   ..couverture = 'dasd'
   ..liked = true
   ..rating = 5
@@ -53,7 +53,7 @@ UserModel user3 = UserModel()
   ..status = true;
 UserModel user4 = UserModel()
   ..name = 'hello'
-  ..avatar = 'hi'
+  ..avatar = 'assets/images/carrescue1.png'
   ..couverture = 'dasd'
   ..liked = true
   ..rating = 5
@@ -66,7 +66,7 @@ UserModel user4 = UserModel()
 
 UserModel user5 = UserModel()
   ..name = 'hello'
-  ..avatar = 'hi'
+  ..avatar = 'assets/images/carrescue1.png'
   ..couverture = 'dasd'
   ..liked = true
   ..rating = 5

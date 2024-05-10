@@ -13,7 +13,6 @@ List<PostUserModel> posts = [
   PostUserModel()
     ..user = user1
     ..cuisineType = 'sadas'
-    ..cuisineType = 'asdad'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',
@@ -22,7 +21,6 @@ List<PostUserModel> posts = [
   PostUserModel()
     ..user = user2
     ..cuisineType = 'sadas'
-    ..cuisineType = 'asdad'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',
@@ -31,7 +29,6 @@ List<PostUserModel> posts = [
   PostUserModel()
     ..user = user3
     ..cuisineType = 'sadas'
-    ..cuisineType = 'asdad'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',
@@ -40,7 +37,6 @@ List<PostUserModel> posts = [
   PostUserModel()
     ..user = user4
     ..cuisineType = 'sadas'
-    ..cuisineType = 'asdad'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',
@@ -49,7 +45,6 @@ List<PostUserModel> posts = [
   PostUserModel()
     ..user = user5
     ..cuisineType = 'sadas'
-    ..cuisineType = 'asdad'
     ..images = [
       'assets/images/carrescue1.png',
       'assets/images/carrescue1.png',

@@ -1,3 +1,4 @@
+import 'package:car_flutter/manage/user/models/post_user_model.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -52,6 +53,46 @@ class _HomePageState extends State<HomePage>
             ),
             const SizedBox(height: 12.0),
             const Divider(thickness: 6, color: Color(0xFFEBEDEF)),
+            Expanded(
+              child: TabBarView(controller: tabController, children: [
+                ListView.separated(
+                    itemBuilder: (context, index) {
+                      return Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 20.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                CircleAvatar(
+                                  radius: 25,
+                                  backgroundImage: AssetImage(
+                                      posts[index].user?.avatar ?? ''),
+                                ),
+                                const SizedBox(width: 5.0),
+                                Column(
+                                  children: [
+                                    Text(posts[index].user?.name ?? ''),
+                                    Text(posts[index].user?.name ?? ''),
+                                  ],
+                                ),
+                                const Divider(
+                                    thickness: 1, color: Color(0xFFEBEDEF))
+                              ],
+                            )
+                          ],
+                        ),
+                      );
+                    },
+                    separatorBuilder: (context, index) {
+                      return const Divider(
+                          thickness: 6.0, color: Color(0xFFEBEDEF));
+                    },
+                    itemCount: posts.length),
+                Container(
+                  color: Colors.red,
+                ),
+              ]),
+            )
           ],
         ),
       ),

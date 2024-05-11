@@ -103,7 +103,7 @@ class _HomePageState extends State<HomePage>
                                 SvgPicture.asset('assets/icons/ic_star.svg'),
                                 const SizedBox(width: 4.0),
                                 Text(
-                                  '${post.user?.rate ?? 0.0}',
+                                  '${post.user?.rating ?? 0.0}',
                                   style: const TextStyle(fontSize: 14.0),
                                 ),
                                 const SizedBox(width: 4.0),

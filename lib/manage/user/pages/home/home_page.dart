@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage>
                                     ),
                                     const SizedBox(height: 2.0),
                                     Text(
-                                      post.user?.description ?? '',
+                                      post.user?.slogan ?? '',
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                       style: const TextStyle(
@@ -107,16 +107,46 @@ class _HomePageState extends State<HomePage>
                                   style: const TextStyle(fontSize: 14.0),
                                 ),
                                 const SizedBox(width: 4.0),
-                                Text('(${post.user?.review ?? 0} like)',
+                                Text('(${post.user?.review ?? 0} likes)',
                                     style: const TextStyle(fontSize: 14.0)),
                                 const SizedBox(
                                   width: 45.0,
                                 ),
                                 SvgPicture.asset('assets/icons/ic_map_pin.svg'),
                                 const SizedBox(width: 4.0),
-                                Text(post.user?.location?.city ?? '')
+                                Text(post.user?.location?.city ?? ''),
                               ],
-                            )
+                            ),
+                            const SizedBox(height: 10.0),
+                            Text(post.description ?? ''),
+                            const SizedBox(height: 10.0),
+                            SizedBox(
+                              height: 128,
+                              child: Stack(
+                                children: [
+                                  PageView(
+                                    children: [
+                                      ...List.generate(post.image?.length ?? 0,
+                                          (index) {
+                                        return Stack(
+                                          children: [
+                                            ClipRRect(
+                                                borderRadius:
+                                                    BorderRadius.circular(10.0),
+                                                child: Image.asset(
+                                                  post.image?[index] ?? '',
+                                                  width: double.infinity,
+                                                  fit: BoxFit.cover,
+                                                )),
+                                          ],
+                                        );
+                                      }),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const SizedBox(height: 10.0),
                           ],
                         ),
                       );

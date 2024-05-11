@@ -1,98 +1,3 @@
-// import 'package:car_flutter/manage/user/models/location_model.dart';
-
-// class UserModel {
-//   String? name;
-//   String? avatar;
-//   String? slogan;
-//   bool? liked;
-//   double? rating;
-//   int? review;
-//   String? description;
-//   String? openTime;
-//   String? closeTime;
-//   String? phoneNumber;
-//   bool? status;
-//   LocationModel? location;
-//   UserModel();
-// }
-
-// UserModel user1 = UserModel()
-//   ..name = 'hello'
-//   ..avatar = 'assets/images/carrescue1.png'
-//   ..slogan = 'dasd'
-//   ..liked = true
-//   ..rating = 5
-//   ..review = 10
-//   ..description = 'asd'
-//   ..openTime = '24/7'
-//   ..closeTime = '24/7'
-//   ..phoneNumber = '0948586372'
-//   ..status = true;
-
-// UserModel user2 = UserModel()
-//   ..name = 'hello'
-//   ..avatar = 'assets/images/carrescue1.png'
-//   ..slogan = 'dasd'
-//   ..liked = true
-//   ..rating = 5
-//   ..review = 10
-//   ..description = 'asd'
-//   ..openTime = '211'
-//   ..closeTime = '2323'
-//   ..phoneNumber = '2322'
-//   ..status = true;
-
-// UserModel user3 = UserModel()
-//   ..name = 'hello'
-//   ..avatar = 'assets/images/carrescue1.png'
-//   ..slogan = 'dasd'
-//   ..liked = true
-//   ..rating = 5
-//   ..review = 10
-//   ..description = 'asd'
-//   ..openTime = '211'
-//   ..closeTime = '2323'
-//   ..phoneNumber = '2322'
-//   ..status = true;
-// UserModel user4 = UserModel()
-//   ..name = 'hello'
-//   ..avatar = 'assets/images/carrescue1.png'
-//   ..slogan = 'dasd'
-//   ..liked = true
-//   ..rating = 5
-//   ..review = 10
-//   ..description = 'asd'
-//   ..openTime = '211'
-//   ..closeTime = '2323'
-//   ..phoneNumber = '2322'
-//   ..status = true;
-
-// UserModel user5 = UserModel()
-//   ..name = 'hello'
-//   ..avatar = 'assets/images/carrescue1.png'
-//   ..slogan = 'dasd'
-//   ..liked = true
-//   ..rating = 5
-//   ..review = 10
-//   ..description = 'asd'
-//   ..openTime = '211'
-//   ..closeTime = '2323'
-//   ..phoneNumber = '2322'
-//   ..status = true;
-
-// UserModel user6 = UserModel()
-//   ..name = 'hello'
-//   ..avatar = 'assets/images/carrescue1.png'
-//   ..slogan = 'dasd'
-//   ..liked = true
-//   ..rating = 5
-//   ..review = 10
-//   ..description = 'asd'
-//   ..openTime = '211'
-//   ..closeTime = '2323'
-//   ..phoneNumber = '2322'
-//   ..status = true;
-
 import 'package:car_flutter/manage/user/models/location_model.dart';
 
 class UserModel {
@@ -102,12 +7,13 @@ class UserModel {
   String? background;
   double? rating;
   int? review;
-  String? description;
+  String? slogan;
   LocationModel? location;
   String? openTime;
   String? closeTime;
   String? phoneNumber;
   String? website;
+  String? tiktok;
   bool? status;
 
   UserModel();
@@ -115,45 +21,96 @@ class UserModel {
 
 UserModel user1 = UserModel()
   ..id = '1'
-  ..name = "Huy01"
-  ..avatar = 'assets/images/avt1.jpg'
+  ..name = "Chung Aotu"
+  ..avatar = 'assets/images/backgrounddone.png'
   ..background = 'assets/images/chung aotu.jpeg'
   ..rating = 4.0
   ..review = 56
-  ..description = 'aaaaaaaaaaaaa'
+  ..slogan = '24/7'
   ..location = locationUser1
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
   ..website = 'facebook.com'
+  ..tiktok = ''
   ..status = true;
 
 UserModel user2 = UserModel()
   ..id = '2'
-  ..name = "Huy02"
-  ..avatar = 'assets/images/avt2.jpg'
+  ..name = "Hiếu Aotu"
+  ..avatar = 'assets/images/iconfacebooklogo.png'
   ..background = 'assets/images/chung aotu.jpeg'
   ..rating = 1.0
   ..review = 100
-  ..description = 'aaaaaaaaaaaaa'
+  ..slogan = '24/7'
   ..location = locationUser2
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
   ..website = 'facebook.com'
+  ..tiktok = ''
   ..status = true;
 
 UserModel user3 = UserModel()
   ..id = '3'
-  ..name = "Huy04"
-  ..avatar = 'assets/images/avt4.jpg'
+  ..name = "Hiu Huynh Aotu"
+  ..avatar = 'assets/images/backgrounddone.png'
   ..background = 'assets/images/chung aotu.jpeg'
   ..rating = 2.0
   ..review = 100
-  ..description = 'aaaaaaaaaaaaa'
+  ..slogan = '24/7'
+  ..location = locationUser3
+  ..openTime = '6:00'
+  ..closeTime = '20:00'
+  ..phoneNumber = '0123456'
+  ..website = 'facebook.com'
+  ..tiktok = ''
+  ..status = false;
+
+UserModel user4 = UserModel()
+  ..id = '3'
+  ..name = "Huynh Aotu"
+  ..avatar = 'assets/images/iconfacebooklogo.png'
+  ..background = 'assets/images/chung aotu.jpeg'
+  ..rating = 2.0
+  ..review = 100
+  ..slogan = '24/7'
+  ..location = locationUser4
+  ..openTime = '6:00'
+  ..closeTime = '20:00'
+  ..phoneNumber = '0123456'
+  ..website = 'facebook.com'
+  ..tiktok = ''
+  ..status = false;
+
+UserModel user5 = UserModel()
+  ..id = '3'
+  ..name = "Ngoc Aotu"
+  ..avatar = 'assets/images/carrescue10.png'
+  ..background = 'assets/images/chung aotu.jpeg'
+  ..rating = 2.0
+  ..review = 100
+  ..slogan = '24/7'
+  ..location = locationUser5
+  ..openTime = '6:00'
+  ..closeTime = '20:00'
+  ..phoneNumber = '0123456'
+  ..website = 'facebook.com'
+  ..tiktok = ''
+  ..status = false;
+
+UserModel user6 = UserModel()
+  ..id = '3'
+  ..name = "Vinfast"
+  ..avatar = 'assets/images/backgrounddone.png'
+  ..background = 'assets/images/chung aotu.jpeg'
+  ..rating = 2.0
+  ..review = 100
+  ..slogan = '24/7'
   ..location = locationUser1
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
   ..website = 'facebook.com'
+  ..tiktok = ''
   ..status = false;

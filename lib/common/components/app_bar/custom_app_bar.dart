@@ -13,8 +13,6 @@ class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
 class _CustomAppBarState extends State<CustomAppBar> {
   @override
   Widget build(BuildContext context) {
-    //padding: const EdgeInsets.symmetric(horizontal: 20.0).copyWith(
-    // top: MediaQuery.of(context).padding.top + 10.0, bottom: 20.0),
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15.0).copyWith(
         top: MediaQuery.of(context).padding.top + 10.0,
@@ -26,10 +24,30 @@ class _CustomAppBarState extends State<CustomAppBar> {
               'assets/images/Autocarlogo.png',
             ),
             const Spacer(),
-            const Icon(
-              Icons.search,
-              size: 35.0,
-            )
+            GestureDetector(
+              onTap: () {},
+              child: const CircleAvatar(
+                backgroundColor: Color(0xFFEBEDEF),
+                child: Icon(
+                  Icons.search,
+                  size: 30.0,
+                ),
+              ),
+            ),
+            const SizedBox(
+              width: 5.0,
+            ),
+            GestureDetector(
+              onTap: () {},
+              child: CircleAvatar(
+                backgroundColor: const Color(0xFFEBEDEF),
+                child: Image.asset(
+                  'assets/images/icons8message.png',
+                  fit: BoxFit.cover,
+                  width: 25.0,
+                ),
+              ),
+            ),
           ],
         ),
       ),

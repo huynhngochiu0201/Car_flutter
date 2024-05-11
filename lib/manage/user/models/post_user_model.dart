@@ -4,7 +4,6 @@ import 'package:car_flutter/manage/user/models/user_model.dart';
 class PostModel {
   String? id;
   UserModel? user;
-  String? cuisineType;
   double? rate;
   LocationModel? location;
   String? description;
@@ -18,70 +17,85 @@ List<PostModel> posts = [
   PostModel()
     ..id = '1'
     ..user = user1
-    ..cuisineType = 'Da Nang'
     ..rate = 5.0
     ..location = locationUser1
     ..description =
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_1280.jpg',
-      'https://cdn.pixabay.com/photo/2023/09/05/12/44/mug-8235059_1280.jpg'
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
     ],
   PostModel()
     ..id = '2'
     ..user = user2
-    ..cuisineType = 'Quang Nam'
     ..rate = 4.0
     ..location = locationUser2
     ..description =
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_1280.jpg',
-      'https://cdn.pixabay.com/photo/2023/09/05/12/44/mug-8235059_1280.jpg'
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
     ],
   PostModel()
     ..id = '3'
     ..user = user3
-    ..cuisineType = 'Quang Ngai'
     ..rate = 4.0
     ..location = locationUser1
     ..description =
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_1280.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
     ],
   PostModel()
     ..id = '4'
-    ..user = user1
-    ..cuisineType = 'Tay Nguyen'
+    ..user = user4
     ..rate = 5.0
     ..location = locationUser1
     ..description =
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_1280.jpg',
-      'https://cdn.pixabay.com/photo/2023/09/05/12/44/mug-8235059_1280.jpg'
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
     ],
   PostModel()
     ..id = '5'
-    ..user = user2
-    ..cuisineType = 'Ha Noi'
+    ..user = user5
     ..rate = 4.0
     ..location = locationUser2
-    ..description = 'bbbbbcccc'
+    ..description =
+        'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_1280.jpg',
-      'https://cdn.pixabay.com/photo/2023/09/05/12/44/mug-8235059_1280.jpg'
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
     ],
   PostModel()
     ..id = '6'
-    ..user = user3
-    ..cuisineType = 'Ho Chi Minh'
+    ..user = user6
     ..rate = 4.0
     ..location = locationUser1
-    ..description = 'cccccddddd'
+    ..description =
+        'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'https://cdn.pixabay.com/photo/2023/07/07/17/47/sushi-8113165_1280.jpg',
-      'https://cdn.pixabay.com/photo/2023/09/05/12/44/mug-8235059_1280.jpg'
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
+      'assets/images/chungaotu.jpg',
     ],
 ];

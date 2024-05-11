@@ -7,29 +7,14 @@ class LocationModel {
   LocationModel();
 }
 
-LocationModel address1 = LocationModel()
-  ..address = 'Da nang'
-  ..city = 'viet nam'
-  ..lat = 12.0
-  ..long = 21.0;
+LocationModel locationUser1 = LocationModel()
+  ..address = ''
+  ..city = 'Da Nang'
+  ..lat = 15.847228836528659
+  ..long = 108.29961392021683;
 
-LocationModel address2 = LocationModel()
-  ..address = 'Da nang'
-  ..city = 'viet nam'
-  ..lat = 12.0
-  ..long = 21.0;
-LocationModel address3 = LocationModel()
-  ..address = 'Da nang'
-  ..city = 'viet nam'
-  ..lat = 12.0
-  ..long = 21.0;
-LocationModel address4 = LocationModel()
-  ..address = 'Da nang'
-  ..city = 'viet nam'
-  ..lat = 12.0
-  ..long = 21.0;
-LocationModel address5 = LocationModel()
-  ..address = 'Da nang'
-  ..city = 'viet nam'
-  ..lat = 12.0
-  ..long = 21.0;
+LocationModel locationUser2 = LocationModel()
+  ..address = ''
+  ..city = 'Hue'
+  ..lat = 5.0
+  ..long = 2.0;

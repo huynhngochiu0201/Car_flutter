@@ -59,11 +59,8 @@ class _OtpPasswordState extends State<OtpPassword> {
                 backgroundColor: Colors.transparent,
                 enableActiveFill: true,
                 controller: textEditingController,
-                onChanged: (value) {
-                  print(value);
-                },
+                onChanged: (value) {},
                 onCompleted: (value) {
-                  print(value);
                   // Xử lý khi nhập đầy đủ OTP
                 },
               ),
@@ -72,8 +69,10 @@ class _OtpPasswordState extends State<OtpPassword> {
             AppElevatedButton(
               text: 'Next',
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => NewPassword()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const NewPassword()));
               },
             ),
             const SizedBox(height: 30.0),

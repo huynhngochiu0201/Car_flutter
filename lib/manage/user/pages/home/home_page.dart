@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage>
                                     ),
                                     const SizedBox(height: 2.0),
                                     Text(
-                                      post.user?.slogan ?? '',
+                                      post.user?.description ?? '',
                                       maxLines: 1,
                                       overflow: TextOverflow.ellipsis,
                                       style: const TextStyle(
@@ -103,14 +103,18 @@ class _HomePageState extends State<HomePage>
                                 SvgPicture.asset('assets/icons/ic_star.svg'),
                                 const SizedBox(width: 4.0),
                                 Text(
-                                  '${post.user?.rating ?? 0.0}',
+                                  '${post.user?.rate ?? 0.0}',
+                                  style: const TextStyle(fontSize: 14.0),
                                 ),
+                                const SizedBox(width: 4.0),
+                                Text('(${post.user?.review ?? 0} like)',
+                                    style: const TextStyle(fontSize: 14.0)),
                                 const SizedBox(
                                   width: 45.0,
                                 ),
                                 SvgPicture.asset('assets/icons/ic_map_pin.svg'),
                                 const SizedBox(width: 4.0),
-                                Text(post.locationModel?.city ?? ''),
+                                Text(post.user?.location?.city ?? '')
                               ],
                             )
                           ],

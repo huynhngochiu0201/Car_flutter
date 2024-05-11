@@ -2,7 +2,7 @@ import 'package:car_flutter/common/components/app_bar/custom_app_bar.dart';
 import 'package:car_flutter/manage/user/pages/home/home_page.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../common/navigator/bottomnavbarcurved .dart';
+import '../../../../common/navigator/app_bottomnavbar.dart';
 
 class MainHomePage extends StatefulWidget {
   const MainHomePage({super.key});

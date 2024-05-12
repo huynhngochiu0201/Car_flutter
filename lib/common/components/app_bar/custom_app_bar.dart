@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
@@ -20,6 +21,12 @@ class _CustomAppBarState extends State<CustomAppBar> {
       child: SizedBox(
         child: Row(
           children: [
+            GestureDetector(
+              onTap: () {},
+              child: const CircleAvatar(
+                  backgroundColor: Color(0xFFEBEDEF), child: Icon(Icons.menu)),
+            ),
+            const SizedBox(width: 10.0),
             Image.asset(
               'assets/images/Autocarlogo.png',
             ),

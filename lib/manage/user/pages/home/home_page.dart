@@ -30,7 +30,7 @@ class _HomePageState extends State<HomePage>
         child: Column(
           children: [
             Container(
-              height: 60.0,
+              height: 50.0,
               padding: const EdgeInsets.all(6.0),
               margin: const EdgeInsets.symmetric(horizontal: 25.0),
               decoration: BoxDecoration(
@@ -53,8 +53,8 @@ class _HomePageState extends State<HomePage>
                 ],
               ),
             ),
-            const SizedBox(height: 12.0),
-            const Divider(thickness: 6, color: Color(0xFFEBEDEF)),
+            // const SizedBox(height: 5.0),
+            const Divider(thickness: 5, color: Color(0xFFEBEDEF)),
             Expanded(
               child: TabBarView(controller: tabController, children: [
                 ListView.separated(
@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage>
                     },
                     separatorBuilder: (context, index) {
                       return const Divider(
-                          thickness: 6.0, color: Color(0xFFEBEDEF));
+                          thickness: 5.0, color: Color(0xFFEBEDEF));
                     },
                     itemCount: posts.length),
                 Container(

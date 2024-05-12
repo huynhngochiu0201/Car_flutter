@@ -1,5 +1,5 @@
+import 'package:car_flutter/manage/user/pages/home/setting_home.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
   const CustomAppBar({super.key});
@@ -22,7 +22,12 @@ class _CustomAppBarState extends State<CustomAppBar> {
         child: Row(
           children: [
             GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SettingHome()));
+              },
               child: const CircleAvatar(
                   backgroundColor: Color(0xFFEBEDEF), child: Icon(Icons.menu)),
             ),

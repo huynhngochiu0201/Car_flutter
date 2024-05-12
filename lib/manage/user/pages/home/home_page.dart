@@ -14,6 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   late TabController tabController;
+  int pageViewindex = 0;
 
   @override
   void initState() {
@@ -125,6 +126,11 @@ class _HomePageState extends State<HomePage>
                               child: Stack(
                                 children: [
                                   PageView(
+                                    onPageChanged: (value) {
+                                      setState(() {
+                                        pageViewindex = value;
+                                      });
+                                    },
                                     children: [
                                       ...List.generate(post.image?.length ?? 0,
                                           (index) {
@@ -143,6 +149,24 @@ class _HomePageState extends State<HomePage>
                                       }),
                                     ],
                                   ),
+                                  Positioned(
+                                    bottom: 6,
+                                    right: 9,
+                                    child: Container(
+                                      padding: const EdgeInsets.symmetric(
+                                          horizontal: 8.0),
+                                      decoration: BoxDecoration(
+                                        borderRadius:
+                                            BorderRadius.circular(9.0),
+                                        color: Colors.black.withOpacity(0.5),
+                                      ),
+                                      child: Text(
+                                        '${pageViewindex + 1}/${post.image?.length ?? 0}',
+                                        style: const TextStyle(
+                                            color: Colors.white),
+                                      ),
+                                    ),
+                                  )
                                 ],
                               ),
                             ),

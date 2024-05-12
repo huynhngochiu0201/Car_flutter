@@ -128,7 +128,7 @@ class _HomePageState extends State<HomePage>
                                   PageView(
                                     onPageChanged: (value) {
                                       setState(() {
-                                        pageViewindex = value;
+                                        post.current = value;
                                       });
                                     },
                                     children: [
@@ -149,24 +149,25 @@ class _HomePageState extends State<HomePage>
                                       }),
                                     ],
                                   ),
-                                  Positioned(
-                                    bottom: 6,
-                                    right: 9,
-                                    child: Container(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 8.0),
-                                      decoration: BoxDecoration(
-                                        borderRadius:
-                                            BorderRadius.circular(9.0),
-                                        color: Colors.black.withOpacity(0.5),
+                                  if ((post.image?.length ?? 0) > 1)
+                                    Positioned(
+                                      bottom: 6,
+                                      right: 9,
+                                      child: Container(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 8.0),
+                                        decoration: BoxDecoration(
+                                          borderRadius:
+                                              BorderRadius.circular(9.0),
+                                          color: Colors.black.withOpacity(0.5),
+                                        ),
+                                        child: Text(
+                                          '${post.current + 1}/${post.image?.length ?? 0}',
+                                          style: const TextStyle(
+                                              color: Colors.white),
+                                        ),
                                       ),
-                                      child: Text(
-                                        '${pageViewindex + 1}/${post.image?.length ?? 0}',
-                                        style: const TextStyle(
-                                            color: Colors.white),
-                                      ),
-                                    ),
-                                  )
+                                    )
                                 ],
                               ),
                             ),

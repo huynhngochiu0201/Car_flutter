@@ -23,10 +23,6 @@ List<PostModel> posts = [
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
       'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
     ],
   PostModel()
     ..id = '2'

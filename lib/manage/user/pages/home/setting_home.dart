@@ -1,5 +1,4 @@
 import 'package:car_flutter/manage/user/models/post_user_model.dart';
-import 'package:car_flutter/manage/user/pages/home/home_page.dart';
 import 'package:car_flutter/manage/user/pages/home/main_home_page.dart';
 import 'package:car_flutter/manage/user/pages/home/widget/buttom_setting.dart';
 import 'package:car_flutter/manage/user/pages/home/widget/infor_user_card.dart';

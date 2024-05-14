@@ -1,3 +1,4 @@
+import 'package:car_flutter/common/components/app_colors/app_color.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBarCurvedFb1 extends StatefulWidget {
@@ -20,8 +21,6 @@ class _BottomNavBarCurvedFb1State extends State<BottomNavBarCurvedFb1> {
     Size size = MediaQuery.of(context).size;
     double height = 56;
 
-    const primaryColor = Colors.orange;
-    const secondaryColor = Colors.black54;
     // const backgroundColor = Colors.white;
 
     return BottomAppBar(
@@ -36,7 +35,7 @@ class _BottomNavBarCurvedFb1State extends State<BottomNavBarCurvedFb1> {
           Center(
             heightFactor: 0.6,
             child: FloatingActionButton(
-                backgroundColor: primaryColor,
+                backgroundColor: AppColor.primaryColor,
                 elevation: 0.1,
                 onPressed: () => widget.onPressed(2),
                 child: const Icon(Icons.map_outlined)),
@@ -51,16 +50,16 @@ class _BottomNavBarCurvedFb1State extends State<BottomNavBarCurvedFb1> {
                   icon: Icons.home_outlined,
                   selected: widget.selected == 0,
                   onPressed: () => widget.onPressed(0),
-                  defaultColor: secondaryColor,
-                  selectedColor: primaryColor,
+                  defaultColor: AppColor.secondaryColor,
+                  selectedColor: AppColor.primaryColor,
                 ),
                 NavBarIcon(
                   text: "Search",
                   icon: Icons.search_outlined,
                   selected: widget.selected == 1,
                   onPressed: () => widget.onPressed(1),
-                  defaultColor: secondaryColor,
-                  selectedColor: primaryColor,
+                  defaultColor: AppColor.secondaryColor,
+                  selectedColor: AppColor.primaryColor,
                 ),
                 const SizedBox(width: 56),
                 NavBarIcon(
@@ -68,15 +67,15 @@ class _BottomNavBarCurvedFb1State extends State<BottomNavBarCurvedFb1> {
                     icon: Icons.local_grocery_store_outlined,
                     selected: widget.selected == 3,
                     onPressed: () => widget.onPressed(3),
-                    defaultColor: secondaryColor,
-                    selectedColor: primaryColor),
+                    defaultColor: AppColor.secondaryColor,
+                    selectedColor: AppColor.primaryColor),
                 NavBarIcon(
                   text: "Calendar",
                   icon: Icons.date_range_outlined,
                   selected: widget.selected == 4,
                   onPressed: () => widget.onPressed(4),
-                  selectedColor: primaryColor,
-                  defaultColor: secondaryColor,
+                  selectedColor: AppColor.primaryColor,
+                  defaultColor: AppColor.secondaryColor,
                 )
               ],
             ),

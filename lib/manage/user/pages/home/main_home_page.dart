@@ -1,5 +1,6 @@
 import 'package:car_flutter/common/components/app_bar/custom_app_bar.dart';
 import 'package:car_flutter/manage/user/pages/home/home_page.dart';
+import 'package:car_flutter/manage/user/pages/home/widget/menu/setting_home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_slider_drawer/flutter_slider_drawer.dart';
 
@@ -13,15 +14,20 @@ class MainHomePage extends StatefulWidget {
 }
 
 class _MainHomePageState extends State<MainHomePage> {
+  GlobalKey<SliderDrawerState> drawerKey = GlobalKey<SliderDrawerState>();
   int currentIndex = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SliderDrawer(
-        slider: Container(
-          color: Colors.red,
+        key: drawerKey,
+        isDraggable: false,
+        animationDuration: 800,
+        appBar: CustomAppBar(
+          drawerKey: drawerKey,
         ),
+        slider: const SettingHome(),
         child: IndexedStack(
           index: currentIndex,
           children: [

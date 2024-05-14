@@ -27,7 +27,7 @@ class _MainHomePageState extends State<MainHomePage> {
         appBar: CustomAppBar(
           drawerKey: drawerKey,
         ),
-        slider: const SettingHome(),
+        slider: SettingHome(),
         child: IndexedStack(
           index: currentIndex,
           children: [

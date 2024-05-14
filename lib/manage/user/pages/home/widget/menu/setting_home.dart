@@ -1,8 +1,24 @@
 import 'package:car_flutter/manage/user/models/post_user_model.dart';
 import 'package:flutter/material.dart';
+import '../../../../models/menu_items_model.dart';
 
 class SettingHome extends StatelessWidget {
-  const SettingHome({super.key});
+  SettingHome({super.key});
+
+  final List<Widget> pages = [
+    Container(
+      color: Colors.white,
+    ),
+    Container(
+      color: Colors.yellow,
+    ),
+    Container(
+      color: Colors.cyan,
+    ),
+    Container(
+      color: Colors.red,
+    ),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +36,40 @@ class SettingHome extends StatelessWidget {
               radius: 50.0,
               backgroundImage: AssetImage('assets/images/Autocarlogo.png')),
           const SizedBox(height: 10.0),
-          Text(posts[0].user?.name ?? ''),
+          const Text('WelComs'),
+          Text(
+            posts[0].user?.name ?? '',
+            style: const TextStyle(color: Colors.white),
+          ),
+          Container(
+            margin: const EdgeInsets.all(5),
+            width: double.infinity,
+            height: 300,
+            child: ListView.builder(
+              itemCount: MenuItemsModel.icons.length,
+              itemBuilder: (context, index) {
+                return ListTile(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => pages[index]),
+                    );
+                  },
+                  leading: Icon(
+                    MenuItemsModel.icons[index],
+                    size: 30.0,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    MenuItemsModel.texts[index],
+                    style: const TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                );
+              },
+            ),
+          )
         ],
       ),
     );

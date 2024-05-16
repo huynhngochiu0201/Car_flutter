@@ -1,14 +1,13 @@
 import 'package:car_flutter/manage/user/models/post_user_model.dart';
 import 'package:flutter/material.dart';
 import '../../../../models/menu_items_model.dart';
+import '../../main_home_page.dart';
 
 class SettingHome extends StatelessWidget {
   SettingHome({super.key});
 
   final List<Widget> pages = [
-    Container(
-      color: Colors.white,
-    ),
+    const MainHomePage(),
     Container(
       color: Colors.yellow,
     ),
@@ -36,7 +35,7 @@ class SettingHome extends StatelessWidget {
               radius: 50.0,
               backgroundImage: AssetImage('assets/images/Autocarlogo.png')),
           const SizedBox(height: 10.0),
-          const Text('WelComs'),
+          const Text('WelComs trả về gmail'),
           Text(
             posts[0].user?.name ?? '',
             style: const TextStyle(color: Colors.white),

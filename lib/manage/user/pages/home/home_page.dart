@@ -38,6 +38,7 @@ class _HomePageState extends State<HomePage>
                   borderRadius: BorderRadius.circular(22.0),
                   color: const Color(0xFFEBEDEF)),
               child: TabBar(
+                dividerColor: Colors.transparent,
                 controller: tabController,
                 indicatorSize: TabBarIndicatorSize.tab,
                 indicator: BoxDecoration(

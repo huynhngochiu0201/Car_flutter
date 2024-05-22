@@ -1,5 +1,7 @@
 import 'package:car_flutter/manage/user/models/post_user_model.dart';
+import 'package:car_flutter/manage/user/pages/product/product.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 class HomePage extends StatefulWidget {
@@ -66,38 +68,48 @@ class _HomePageState extends State<HomePage>
                         padding: const EdgeInsets.symmetric(horizontal: 20.0),
                         child: Column(
                           children: [
-                            Row(
-                              children: [
-                                CircleAvatar(
-                                  radius: 25,
-                                  backgroundImage: AssetImage(
-                                      posts[index].user?.avatar ?? ''),
-                                ),
-                                const SizedBox(width: 10.0),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      post.user?.name ?? '',
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: const TextStyle(
-                                          fontSize: 16.0,
-                                          fontWeight: FontWeight.w700),
-                                    ),
-                                    const SizedBox(height: 2.0),
-                                    Text(
-                                      post.user?.slogan ?? '',
-                                      maxLines: 1,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: const TextStyle(
-                                          color: Color(0XFFF19B15),
-                                          fontSize: 14.0,
-                                          fontWeight: FontWeight.w400),
-                                    ),
-                                  ],
-                                ),
-                              ],
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            const ProductCart()));
+                              },
+                              child: Row(
+                                children: [
+                                  CircleAvatar(
+                                    radius: 25,
+                                    backgroundImage: AssetImage(
+                                        posts[index].user?.avatar ?? ''),
+                                  ),
+                                  const SizedBox(width: 10.0),
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        post.user?.name ?? '',
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(
+                                            fontSize: 16.0,
+                                            fontWeight: FontWeight.w700),
+                                      ),
+                                      const SizedBox(height: 2.0),
+                                      Text(
+                                        post.user?.slogan ?? '',
+                                        maxLines: 1,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: const TextStyle(
+                                            color: Color(0XFFF19B15),
+                                            fontSize: 14.0,
+                                            fontWeight: FontWeight.w400),
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ),
                             const Divider(
                                 thickness: 1, color: Color(0xFFEBEDEF)),

@@ -1,7 +1,8 @@
 import 'package:car_flutter/manage/user/models/post_user_model.dart';
+import 'package:car_flutter/manage/user/models/user_model.dart';
 import 'package:car_flutter/manage/user/pages/product/product.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 import 'package:flutter_svg/svg.dart';
 
 class HomePage extends StatefulWidget {
@@ -73,8 +74,9 @@ class _HomePageState extends State<HomePage>
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) =>
-                                            const ProductCart()));
+                                        builder: (context) => ProductCart(
+                                              user: post.user ?? UserModel(),
+                                            )));
                               },
                               child: Row(
                                 children: [

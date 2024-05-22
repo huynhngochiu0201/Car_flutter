@@ -14,42 +14,42 @@ class ProductModel {
 
 List<ProductModel> product = [
   ProductModel()
-    ..title = ''
+    ..title = 'hello'
     ..nameProduct = ''
     ..price = 10.0
     ..quantity = 10.0
     ..status = true
     ..image = 'assets/images/chungaotu.jpg',
   ProductModel()
-    ..title = ''
+    ..title = 'hello'
     ..nameProduct = ''
     ..price = 10.0
     ..quantity = 10.0
     ..status = true
     ..image = 'assets/images/chungaotu.jpg',
   ProductModel()
-    ..title = ''
+    ..title = 'hello'
     ..nameProduct = ''
     ..price = 10.0
     ..quantity = 10.0
     ..status = true
     ..image = 'assets/images/chungaotu.jpg',
   ProductModel()
-    ..title = ''
+    ..title = 'hello'
     ..nameProduct = ''
     ..price = 10.0
     ..quantity = 10.0
     ..status = true
     ..image = 'assets/images/chungaotu.jpg',
   ProductModel()
-    ..title = ''
+    ..title = 'hello'
     ..nameProduct = ''
     ..price = 10.0
     ..quantity = 10.0
     ..status = true
     ..image = 'assets/images/chungaotu.jpg',
   ProductModel()
-    ..title = ''
+    ..title = 'hello'
     ..nameProduct = ''
     ..price = 10.0
     ..quantity = 10.0

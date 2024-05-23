@@ -67,10 +67,10 @@ class _ProductCartState extends State<ProductCart> {
               child: Container(
                 decoration: const BoxDecoration(
                   color: Colors.white,
-                  // borderRadius: BorderRadius.only(
-                  //   topLeft: Radius.circular(20),
-                  //   topRight: Radius.circular(20),
-                  // ),
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20),
+                  ),
                 ),
                 child: SingleChildScrollView(
                   child: Padding(
@@ -82,15 +82,72 @@ class _ProductCartState extends State<ProductCart> {
                         GestureDetector(
                           onTap: () {},
                           child: Container(
-                            height: 50.0,
+                            height: 180.0,
                             decoration: BoxDecoration(
                                 border: Border.all(color: Colors.black12),
-                                borderRadius: const BorderRadius.all(
-                                    Radius.circular(20.0)),
+                                borderRadius: const BorderRadius.only(
+                                    topRight: Radius.circular(60.0),
+                                    topLeft: Radius.circular(10.0),
+                                    bottomLeft: Radius.circular(10.0),
+                                    bottomRight: Radius.circular(10.0)),
                                 color: Colors.white,
                                 boxShadow: const [
                                   BoxShadow(offset: Offset(0.3, 0.3))
                                 ]),
+                            child: Column(
+                              children: [
+                                Padding(
+                                  padding: const EdgeInsets.symmetric(
+                                          horizontal: 20.0)
+                                      .copyWith(
+                                          top: MediaQuery.of(context)
+                                              .padding
+                                              .top),
+                                  child: Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      const Column(
+                                        children: [
+                                          Text(
+                                            'data',
+                                            style: TextStyle(fontSize: 30.0),
+                                          ),
+                                          Text(
+                                            'data',
+                                            style: TextStyle(fontSize: 30.0),
+                                          )
+                                        ],
+                                      ),
+                                      Container(
+                                        width: 130,
+                                        height: 130,
+                                        decoration: BoxDecoration(
+                                          border: Border.all(
+                                              color: Colors.yellow, width: 3.0),
+                                          shape: BoxShape.circle,
+                                          color: Colors.transparent,
+                                        ),
+                                        child: const Stack(
+                                          children: [
+                                            Positioned.fill(
+                                              child: Align(
+                                                alignment: Alignment.center,
+                                                child: Text(
+                                                  '24/7',
+                                                  style:
+                                                      TextStyle(fontSize: 30.0),
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                         const SizedBox(height: 10.0),
@@ -109,7 +166,7 @@ class _ProductCartState extends State<ProductCart> {
                             crossAxisCount: 2,
                             crossAxisSpacing: 20.0,
                             mainAxisSpacing: 20.0,
-                            mainAxisExtent: 220,
+                            mainAxisExtent: 240,
                           ),
                           itemBuilder: (_, index) {
                             final productItem = product[index];
@@ -141,7 +198,14 @@ class _ProductCartState extends State<ProductCart> {
                                       ),
                                     ),
                                   ),
-                                  Text(productItem.title ?? '')
+                                  Text(productItem.title ?? ''),
+                                  const Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text('10.0 '),
+                                    ],
+                                  ),
                                 ],
                               ),
                             );

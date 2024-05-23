@@ -1,9 +1,7 @@
 import 'package:car_flutter/common/components/button/app_elevated_buttom.dart';
 import 'package:car_flutter/common/components/text_field/app_text_field.dart';
-
+import 'package:car_flutter/manage/user/pages/auth/login/login_page.dart';
 import 'package:flutter/material.dart';
-
-import '../../splash/onboarding_page.dart';
 
 class NewPassword extends StatefulWidget {
   const NewPassword({super.key});
@@ -57,10 +55,8 @@ class _NewPasswordState extends State<NewPassword> {
             AppElevatedButton(
               text: 'Next',
               onPressed: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const OnBoardingPage()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const LoginPage()));
               },
             )
           ],

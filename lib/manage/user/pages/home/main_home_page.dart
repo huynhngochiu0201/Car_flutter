@@ -1,4 +1,5 @@
 import 'package:car_flutter/common/components/app_bar/custom_app_bar.dart';
+import 'package:car_flutter/manage/user/pages/cart/cart.dart';
 import 'package:car_flutter/manage/user/pages/home/home_page.dart';
 import 'package:car_flutter/manage/user/pages/home/widget/menu/setting_home.dart';
 import 'package:flutter/material.dart';
@@ -34,7 +35,7 @@ class _MainHomePageState extends State<MainHomePage> {
             const HomePage(),
             Container(color: Colors.yellow),
             Container(color: Colors.blue),
-            Container(color: Colors.pink),
+            const CartPage(),
             Container(color: Colors.blueGrey)
           ],
         ),

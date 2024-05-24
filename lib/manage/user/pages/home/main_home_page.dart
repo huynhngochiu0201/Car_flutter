@@ -1,5 +1,5 @@
 import 'package:car_flutter/common/components/app_bar/custom_app_bar.dart';
-import 'package:car_flutter/manage/user/pages/cart/cart.dart';
+import 'package:car_flutter/manage/user/pages/cart/cart_page.dart';
 import 'package:car_flutter/manage/user/pages/home/home_page.dart';
 import 'package:car_flutter/manage/user/pages/home/widget/menu/setting_home.dart';
 import 'package:flutter/material.dart';

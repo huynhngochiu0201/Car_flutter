@@ -1,6 +1,6 @@
 import 'package:car_flutter/manage/user/models/post_user_model.dart';
 import 'package:flutter/material.dart';
-import '../../../../models/menu_items_model.dart';
+import '../../../../models/seting/menu_items_model.dart';
 import '../../main_home_page.dart';
 
 class SettingHome extends StatelessWidget {

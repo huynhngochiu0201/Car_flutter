@@ -9,6 +9,7 @@ class UserModel {
   int? review;
   String? slogan;
   LocationModel? location;
+
   String? openTime;
   String? closeTime;
   String? phoneNumber;
@@ -27,7 +28,6 @@ UserModel user1 = UserModel()
   ..rating = 4.0
   ..review = 56
   ..slogan = '24/7'
-  ..location = locationUser1
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
@@ -39,7 +39,7 @@ UserModel user2 = UserModel()
   ..id = '2'
   ..name = "Hiếu Aotu"
   ..avatar = 'assets/images/iconfacebooklogo.png'
-  ..background = 'assets/images/chungaotu.jpg'
+  ..background = 'assets/images/auto_4.jpeg'
   ..rating = 1.0
   ..review = 100
   ..slogan = '24/7'
@@ -55,7 +55,7 @@ UserModel user3 = UserModel()
   ..id = '3'
   ..name = "Hiu Huynh Aotu"
   ..avatar = 'assets/images/backgrounddone.png'
-  ..background = 'assets/images/chungaotu.jpg'
+  ..background = 'assets/images/auto_5.jpeg'
   ..rating = 2.0
   ..review = 100
   ..slogan = '24/7'
@@ -68,10 +68,10 @@ UserModel user3 = UserModel()
   ..status = false;
 
 UserModel user4 = UserModel()
-  ..id = '3'
+  ..id = '4'
   ..name = "Huynh Aotu"
   ..avatar = 'assets/images/iconfacebooklogo.png'
-  ..background = 'assets/images/chung aotu.jpeg'
+  ..background = 'assets/images/auto_1.jpeg'
   ..rating = 2.0
   ..review = 100
   ..slogan = '24/7'
@@ -84,10 +84,10 @@ UserModel user4 = UserModel()
   ..status = false;
 
 UserModel user5 = UserModel()
-  ..id = '3'
+  ..id = '5'
   ..name = "Ngoc Aotu"
   ..avatar = 'assets/images/carrescue10.png'
-  ..background = 'assets/images/chung aotu.jpeg'
+  ..background = 'assets/images/auto_2.jpeg'
   ..rating = 2.0
   ..review = 100
   ..slogan = '24/7'
@@ -100,10 +100,10 @@ UserModel user5 = UserModel()
   ..status = false;
 
 UserModel user6 = UserModel()
-  ..id = '3'
+  ..id = '6'
   ..name = "Vinfast"
   ..avatar = 'assets/images/backgrounddone.png'
-  ..background = 'assets/images/chung aotu.jpeg'
+  ..background = 'assets/images/auto_3.jpeg'
   ..rating = 2.0
   ..review = 100
   ..slogan = '24/7'

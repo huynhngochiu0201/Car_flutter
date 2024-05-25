@@ -1,13 +1,18 @@
 import 'package:car_flutter/common/components/app_colors/app_color.dart';
+import 'package:car_flutter/manage/user/models/product_model.dart';
 import 'package:car_flutter/manage/user/models/user_model.dart';
 import 'package:car_flutter/manage/user/pages/cart/cart_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import '../../models/product_model.dart';
 
 class ProductCart extends StatefulWidget {
-  const ProductCart({super.key, required this.user});
+  const ProductCart({
+    super.key,
+    required this.user,
+    required this.productModel,
+  });
   final UserModel user;
+  final ProductModel productModel;
 
   @override
   State<ProductCart> createState() => _ProductCartState();
@@ -204,7 +209,6 @@ class _ProductCartState extends State<ProductCart> {
                           mainAxisExtent: 240,
                         ),
                         itemBuilder: (_, index) {
-                          final productItem = product[index];
                           return Stack(
                             children: [
                               Container(
@@ -313,9 +317,9 @@ class _ProductCartState extends State<ProductCart> {
                                               ),
                                             ],
                                           ),
-                                          child: Text(
-                                            '${productItem.price ?? 0.0}',
-                                            style: const TextStyle(
+                                          child: const Text(
+                                            '',
+                                            style: TextStyle(
                                                 color: Colors.teal,
                                                 fontWeight: FontWeight.bold,
                                                 fontSize: 18),

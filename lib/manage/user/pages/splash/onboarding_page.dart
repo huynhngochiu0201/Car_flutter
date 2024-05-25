@@ -1,5 +1,5 @@
 import 'package:car_flutter/common/components/button/app_elevated_buttom.dart';
-import 'package:car_flutter/manage/user/models/onboarding_page_model.dart';
+import 'package:car_flutter/manage/user/models/seting/onboarding_page_model.dart';
 import 'package:car_flutter/manage/user/pages/auth/login/login_page.dart';
 import 'package:car_flutter/manage/user/pages/welcom_page.dart';
 import 'package:flutter/material.dart';

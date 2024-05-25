@@ -33,9 +33,9 @@ List<PostModel> posts = [
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
       'assets/images/chungaotu.jpg',
+      'assets/images/auto_3.jpeg',
       'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
+      'assets/images/auto_5.jpeg',
       'assets/images/chungaotu.jpg',
     ],
   PostModel()
@@ -46,11 +46,11 @@ List<PostModel> posts = [
     ..description =
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
+      'assets/images/auto_5.jpeg',
+      'assets/images/auto_4.jpeg',
+      'assets/images/auto_3.jpeg',
+      'assets/images/auto_2.jpeg',
+      'assets/images/auto_1.jpeg',
     ],
   PostModel()
     ..id = '4'
@@ -60,11 +60,9 @@ List<PostModel> posts = [
     ..description =
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
+      'assets/images/auto_4.jpeg',
       'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
+      'assets/images/auto_5.jpeg',
     ],
   PostModel()
     ..id = '5'
@@ -74,11 +72,9 @@ List<PostModel> posts = [
     ..description =
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
+      'assets/images/auto_3.jpeg',
+      'assets/images/auto_2.jpeg',
+      'assets/images/auto_4.jpeg',
     ],
   PostModel()
     ..id = '6'
@@ -88,10 +84,8 @@ List<PostModel> posts = [
     ..description =
         'Excepteur a mollis exercitationem. Primis beatae! Quis quos optio montes justo quasi dapibus. Iusto blandit mattis et vitae optio quas nec tellus.'
     ..image = [
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
-      'assets/images/chungaotu.jpg',
+      'assets/images/auto_1.jpeg',
+      'assets/images/auto_5.jpeg',
+      'assets/images/auto_2.jpeg',
     ],
 ];

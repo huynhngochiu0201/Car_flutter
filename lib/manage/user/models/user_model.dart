@@ -1,3 +1,4 @@
+import 'package:car_flutter/manage/user/models/car_product_model.dart';
 import 'package:car_flutter/manage/user/models/location_model.dart';
 
 class UserModel {
@@ -9,13 +10,13 @@ class UserModel {
   int? review;
   String? slogan;
   LocationModel? location;
-
   String? openTime;
   String? closeTime;
   String? phoneNumber;
   String? website;
   String? tiktok;
   bool? status;
+  CardProductModel? cardProductModel;
 
   UserModel();
 }
@@ -28,6 +29,8 @@ UserModel user1 = UserModel()
   ..rating = 4.0
   ..review = 56
   ..slogan = '24/7'
+  ..location = locationUser2
+  ..cardProductModel = cardProductModel1
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
@@ -44,6 +47,7 @@ UserModel user2 = UserModel()
   ..review = 100
   ..slogan = '24/7'
   ..location = locationUser2
+  ..cardProductModel = cardProductModel2
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
@@ -60,6 +64,7 @@ UserModel user3 = UserModel()
   ..review = 100
   ..slogan = '24/7'
   ..location = locationUser3
+  ..cardProductModel = cardProductModel3
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
@@ -76,6 +81,7 @@ UserModel user4 = UserModel()
   ..review = 100
   ..slogan = '24/7'
   ..location = locationUser4
+  ..cardProductModel = cardProductModel4
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
@@ -92,6 +98,7 @@ UserModel user5 = UserModel()
   ..review = 100
   ..slogan = '24/7'
   ..location = locationUser5
+  ..cardProductModel = cardProductModel5
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
@@ -108,6 +115,7 @@ UserModel user6 = UserModel()
   ..review = 100
   ..slogan = '24/7'
   ..location = locationUser1
+  ..cardProductModel = cardProductModel6
   ..openTime = '6:00'
   ..closeTime = '20:00'
   ..phoneNumber = '0123456'
